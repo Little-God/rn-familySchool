@@ -17,7 +17,7 @@ const mainPage = TabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 <Image
                     source={
-                        require('./img/muwu.jpg')
+                        require('./img/tabna01.png')
                     }
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
@@ -35,7 +35,7 @@ const mainPage = TabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 <Image
                     source={
-                        require('./img/muwu.jpg')
+                        require('./img/tabna02.png')
                     }
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
@@ -53,7 +53,7 @@ const mainPage = TabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 <Image
                     source={
-                        require('./img/muwu.jpg')
+                        require('./img/tabna03.png')
                     }
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
@@ -71,7 +71,7 @@ const mainPage = TabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 <Image
                     source={
-                        require('./img/muwu.jpg')
+                        require('./img/tabna04.png')
                     }
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
@@ -90,7 +90,7 @@ const mainPage = TabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 <Image
                     source={
-                        require('./img/muwu.jpg')
+                        require('./img/tabna05.png')
                     }
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
