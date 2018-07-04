@@ -3,7 +3,7 @@ import {ScrollView,Text,Image,View,StyleSheet,AppRegistry,TextInput,FlatList,Ima
 import {
     StackNavigator,
 } from 'react-navigation';
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import Icon from 'react-native-vector-icons/FontAwesome'
 class GongMenu extends Component{
     render(){
         return(
@@ -68,7 +68,7 @@ export default class HelloWorldApp extends Component{
                 </View>
                 <GongMenu></GongMenu>
                 <View>
-                    <Text><Icon name='3d-rotation' size={30} /></Text>
+                    <Text><Icon name='bold' size={30} /></Text>
                 </View>
             </View>
         )
