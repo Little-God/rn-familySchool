@@ -3,7 +3,7 @@ import {ScrollView,Text,Image,View,StyleSheet,AppRegistry,TextInput,FlatList,Ima
 import {
     StackNavigator,
 } from 'react-navigation';
-
+import Icon from 'react-native-vector-icons/MaterialIcons'
 class GongMenu extends Component{
     render(){
         return(
@@ -13,23 +13,23 @@ class GongMenu extends Component{
                         <View style={styles.line}></View>
                         <Text>功能菜单</Text>
                     </View>
-                    <Text>更多 》</Text>
+                    <Text>更多 ></Text>
                 </View>
                 <View style={[styles.flex_sa,styles.h70]}>
                     <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}>》</Text></View>
+                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
                         <Text>我的消息</Text>
                     </View>
                     <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}>》</Text></View>
+                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
                         <Text>我的消息</Text>
                     </View>
                     <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}>》</Text></View>
+                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
                         <Text>我的消息</Text>
                     </View>
                     <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}>》</Text></View>
+                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
                         <Text>我的消息</Text>
                     </View>
                 </View>
@@ -51,22 +51,25 @@ export default class HelloWorldApp extends Component{
                         </View>
                         <Text onPress={() =>
                             navigate('NoticeList', { name: 'NoticeList' })
-                        }>更多 》</Text>
+                        }>更多 ></Text>
                     </View>
                     <View style={[styles.flex_sb, styles.bb_s]}>
                         <Text>省：教育部批准二中王老师为校长</Text>
-                        <Text>》</Text>
+                        <Text> ></Text>
                     </View>
                     <View style={[styles.flex_sb, styles.bb_s]}>
                         <Text>县：县级第二中学食堂修整</Text>
-                        <Text>》</Text>
+                        <Text> ></Text>
                     </View>
                     <View style={[styles.flex_sb, styles.bb_l]}>
                         <Text>班：关于家长和学生如何共处</Text>
-                        <Text>》</Text>
+                        <Text> ></Text>
                     </View>
                 </View>
                 <GongMenu></GongMenu>
+                <View>
+                    <Text><Icon name='3d-rotation' size={30} /></Text>
+                </View>
             </View>
         )
     }

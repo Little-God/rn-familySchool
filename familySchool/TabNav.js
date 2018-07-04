@@ -16,9 +16,7 @@ const mainPage = TabNavigator({
             tabBarLabel: '首页',
             tabBarIcon: ({ tintColor }) => (
                 <Image
-                    source={
-                        require('./img/tabna01.png')
-                    }
+                    source={require('./img/tabna01.png')}
                     style={[styles.icon,{tintColor: tintColor}]}// {tintColor: tintColor} 选中的图片和文字颜色
                 />
             ),
@@ -106,18 +104,28 @@ const mainPage = TabNavigator({
     swipeEnabled: false, // 禁止左右滑动
     backBehavior: 'none', // 按 back 键是否跳转到第一个 Tab， none 为不跳转
     tabBarOptions: {
-        activeTintColor: '#0F9C00', // 文字和图片选中颜色
-        inactiveTintColor: '#333', // 文字和图片默认颜色
-        showIcon: true, // android 默认不显示 icon, 需要设置为 true 才会显示
-        indicatorStyle: {height: 0}, // android 中TabBar下面会显示一条线，高度设为 0 后就不显示线了， 不知道还有没有其它方法隐藏？？？
-        style: {
-            backgroundColor: '#fff', // TabBar 背景色
-            height:50
+        //Android属性
+        upperCaseLabel: false,//是否使标签大写，默认为true
+        //共有属性
+        showIcon: true,//是否显示图标，默认关闭
+        showLabel: true,//是否显示label，默认开启
+        activeTintColor: '#3bd1fc',//label和icon的前景色 活跃状态下（选中）
+        inactiveTintColor: 'gray',//label和icon的前景色 活跃状态下（未选中）
+        style: { //TabNavigator 的背景颜色
+            backgroundColor: 'white',
+            height: 55,
         },
-        labelStyle: {
-            fontSize: 12, // 文字大小,
-            marginTop: 0,
+        indicatorStyle: {//标签指示器的样式对象（选项卡底部的行）。安卓底部会多出一条线，可以将height设置为0来暂时解决这个问题
+            height: 0,
         },
+        labelStyle: {//文字的样式
+            fontSize: 13,
+            marginTop: -5,
+            marginBottom: 5,
+        },
+        iconStyle: {//图标的样式
+            marginBottom: 5,
+        }
     },
 });
 
