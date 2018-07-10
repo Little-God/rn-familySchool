@@ -16,21 +16,29 @@ class GongMenu extends Component{
                     <Text>更多 ></Text>
                 </View>
                 <View style={[styles.flex_sa,styles.h70]}>
-                    <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
-                        <Text>我的消息</Text>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='commenting' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>我的消息</Text>
                     </View>
-                    <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
-                        <Text>我的消息</Text>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='bullhorn' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>班级公告</Text>
                     </View>
-                    <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
-                        <Text>我的消息</Text>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='edit' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>班级作业</Text>
                     </View>
-                    <View>
-                        <View style={styles.menuItem}><Text style={styles.miText}> ></Text></View>
-                        <Text>我的消息</Text>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='book' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>我的工作坊</Text>
+                    </View>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='heart' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>关注我的</Text>
+                    </View>
+                    <View style={styles.item}>
+                        <View style={styles.menuItem}><Text style={styles.miText}><Text><Icon name='users' size={20} /></Text></Text></View>
+                        <Text style={styles.itemt}>关注老师</Text>
                     </View>
                 </View>
             </View>
@@ -67,9 +75,7 @@ export default class HelloWorldApp extends Component{
                     </View>
                 </View>
                 <GongMenu></GongMenu>
-                <View>
-                    <Text><Icon name='bold' size={30} /></Text>
-                </View>
+
             </View>
         )
     }
@@ -100,7 +106,7 @@ const styles = StyleSheet.create({
         marginTop:20
     },
     noticeContent1:{
-        height:120,
+        height:180,
         backgroundColor:'#fff',
         marginTop:20
     },
@@ -136,9 +142,10 @@ const styles = StyleSheet.create({
     },
     flex_sa:{
         flex:1,
-        justifyContent:'space-around',
+        justifyContent:'flex-start',
         alignItems:'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        flexWrap:'wrap'
     },
     menuItem:{
         width:40,
@@ -157,7 +164,14 @@ const styles = StyleSheet.create({
         flex:1
     },
     h70:{
-        flex:2
+        flex:3,
+        marginTop:10
+    },
+    item:{
+        width:'25%'
+    },
+    itemt:{
+        textAlign:'center'
     }
 
 

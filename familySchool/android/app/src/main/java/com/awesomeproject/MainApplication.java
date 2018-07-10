@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.familySchool;
 
 import android.app.Application;
 
